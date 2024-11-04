@@ -25,8 +25,7 @@ function prime(num){
     return false;
 }
 function factorial(num){
-    if(num===0) return 1;
-    return factorial(num-1)*num;
+    return -1;
 }
 exports.avg = avg;
 exports.prime = prime;

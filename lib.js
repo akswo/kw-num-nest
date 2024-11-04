@@ -12,6 +12,7 @@ function prime(num){
 }
 function factorial(num){
     if(num===0) return 1;
+    if(num>15) return -1;//16이상의 수가 오면 안된다.
     return factorial(num-1)*num;
 }
 module.exports = {
