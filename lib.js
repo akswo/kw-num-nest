@@ -4,10 +4,15 @@ function avg(numbers){
 }
 
 function prime(num){
-    return false;
+    if(num<=1) return false;
+    for(let i=2;i<=Math.sqrt(num);i++){//소수 판별법 알고리즘을 이용
+        if(num%i===0) return false;//나누어떨어지는 순간 소수가 아님.
+    }
+    return true;
 }
 function factorial(num){
-    return -1;
+    if(num===0) return 1;
+    return factorial(num-1)*num;
 }
 module.exports = {
     avg,
